@@ -1,0 +1,34 @@
+@@include('partials/header.html', {
+	"title": "Фотогалерея",
+	"breadcrumbvisible": true,
+	"breadcrumb": {
+		"pagetopvisible": true,
+		"pagetopbggray": false,
+		"pagecentervisible": true,
+		"subtitlevisible": false,
+		"pagecenterurl": "about.html",
+		"pagecentertitle": "О компании"
+	}
+})
+
+<section class="photo-gallery-page">
+	<div class="container">
+		<div class="photo-gallery-page__wrapper">
+			@@for (var i = 0; i < 3; i++) {
+			<a href="@@webRoot/images/content/photo-gallery-1.jpg" class="photo-gallery-page__elem gallery-glightbox">
+				<img src="@@webRoot/images/content/photo-gallery-1.jpg" alt="">
+			</a>
+
+			<a href="@@webRoot/images/content/photo-gallery-2.jpg" class="photo-gallery-page__elem gallery-glightbox">
+				<img src="@@webRoot/images/content/photo-gallery-2.jpg" alt="">
+			</a>
+
+			<a href="@@webRoot/images/content/photo-gallery-3.jpg" class="photo-gallery-page__elem gallery-glightbox">
+				<img src="@@webRoot/images/content/photo-gallery-3.jpg" alt="">
+			</a>
+			}
+		</div>
+	</div>
+</section>
+
+@@include('partials/footer.html')

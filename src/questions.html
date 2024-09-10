@@ -1,0 +1,38 @@
+@@include('partials/header.html', {
+	"title": "Часто задаваемые вопросы",
+	"breadcrumbvisible": true,
+	"breadcrumb": {
+		"pagetopvisible": true,
+		"pagetopbggray": false,
+		"pagecentervisible": false,
+		"subtitlevisible": false,
+	}
+})
+
+
+
+<section class="questions">
+	<div class="container">
+		<div class="questions__wrapper">
+			@@for (var i = 0; i < 10; i++)  {
+			<div class="questions__elem">
+				<div class="questions__elem-top">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				</div>
+
+				<div class="questions__elem-body">
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos mollitia in nostrum quia dicta beatae ratione excepturi. Omnis nemo nobis, facilis odio iure autem in temporibus earum. Iusto, numquam incidunt!
+					</p>
+					
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima, non a laboriosam doloribus nemo doloremque omnis rem nulla et expedita pariatur aperiam, tenetur libero. Impedit facere harum nemo eius!
+					</p>
+				</div>
+			</div>
+			}
+		</div>
+	</div>
+</section>
+
+@@include('partials/footer.html')

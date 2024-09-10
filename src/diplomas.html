@@ -1,0 +1,29 @@
+@@include('partials/header.html', {
+	"title": "Дипломы",
+	"breadcrumbvisible": true,
+	"breadcrumb": {
+		"pagetopvisible": true,
+		"pagetopbggray": false,
+		"pagecentervisible": true,
+		"subtitlevisible": false,
+		"pagecenterurl": "about.html",
+		"pagecentertitle": "О компании"
+	}
+})
+
+<section class="certificates">
+	<div class="container">
+		<div class="gallery">
+			@@for (var i = 1; i < 9; i++) {
+			<a href="@@webRoot/images/content/diplom-`+i+`.jpg" class="gallery__elem gallery-glightbox">
+				<img src="@@webRoot/images/content/diplom-`+i+`.jpg" alt="">
+			</a>
+			}
+			<a href="@@webRoot/images/content/diplom-8.jpg" class="gallery__elem gallery-glightbox">
+				<img src="@@webRoot/images/content/diplom-8.jpg" alt="">
+			</a>
+		</div>
+	</div>
+</section>
+
+@@include('partials/footer.html')

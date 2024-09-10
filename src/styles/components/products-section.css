@@ -1,0 +1,87 @@
+.products-section {
+    padding-bottom: 80px;
+}
+.products-section_padding-top {
+    padding-top: 80px;
+}
+.products-section__title {
+    margin: 0 0 62px 0;
+}
+.products-section__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px;
+}
+.products-section__elem {
+    height: 225px;
+    width: calc((100% - 38px) / 3);
+    padding: 30px 30px 20px 30px;
+    border: 2px solid #d4d4d4;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.products-section__elem::after {
+    content: url('../images/decor/arrow.svg');
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 30px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #009BDA;
+}
+.products-section__elem-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    max-width: 175px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+.products-section__elem-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 200px;
+}
+.products-section__elem-image img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 992px) {
+    .products-section__elem {
+        width: calc((100% - 20px) / 2);
+    }
+}
+@media (max-width: 768px) {
+    .products-section {
+        padding-bottom: 40px;
+    }
+    .products-section_padding-top {
+        padding-top: 40px;
+    }
+    .products-section__title {
+        margin: 0 0 40px 0;
+    }
+    .products-section__elem {
+        width: 100%;
+    }
+    .products-section__elem-title {
+        font-size: 20px;
+    }
+    .products-section__elem::after {
+        width: 34px;
+        height: 34px;
+    }
+}

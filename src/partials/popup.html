@@ -1,0 +1,158 @@
+@@if(type === "products") {
+<div class="popup" id="products">
+    <div class="popup__body">
+        <div class="popup__content">
+            <div class="popup__top">
+                <h3 class="popup__title">
+                    Оформление заказа
+                </h3>
+                
+                <button type="button" class="popup__top-close popup-close" id="products"></button>
+            </div>
+            
+            <div class="popup__info">
+                <div class="popup__info-img">
+                    <img src="" alt="">
+                </div>
+
+                <div class="popup__info-content">
+                    <h4 class="popup__info-title"></h4>
+
+                    <h5 class="popup__info-subtitle"></h5>
+                </div>
+            </div>
+
+            <div class="popup__form">
+                <form action="" method="post">
+
+                    <div class="form__field">
+                        <label for="name" class="form__label">
+                            Контактное лицо
+                        </label>
+                        <input type="text" id="name" class="form__input" placeholder="ФИО">
+                    </div>
+
+                    <div class="form__field">
+                        <label for="tel" class="form__label">
+                            Телефон
+                        </label>
+                        <input type="text" id="tel" class="form__input mask-phone" placeholder="+7">
+                    </div>
+
+                    <div class="form__field">
+                        <label for="company" class="form__label">
+                            Компания
+                        </label>
+                        <input type="text" id="company" class="form__input" placeholder="Название">
+                    </div>
+
+                    <div class="form__field">
+                        <label for="inn" class="form__label">
+                            ИНН
+                        </label>
+                        <input type="text" id="inn" class="form__input" placeholder="123456789">
+                    </div>
+
+                    <div class="form__field">
+                        <label for="inn" class="form__label">
+                            Даты поставки
+                        </label>
+                        <input type="text" id="inn" class="form__input mask-date" placeholder="12.12.2012">
+                    </div>
+
+                    <div class="checkbox form__checkbox">
+                        <input type="checkbox" id="all" class="checkbox__input form__checkbox-input">
+                        <label for="all" class="checkbox__label form__checkbox-label">
+                            <span>
+                                Я согласен(а) с обработкой моих персональных данных в соответствии с условиями <a href="#">Политики конфиденциальности</a>
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="popup__button-wrapper">
+                        <button type="button" class="popup__button-outline button popup-close" id="products">Отменить</button>
+
+                        <button type="submit" class="popup__button button">Отправить</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+}
+@@if(type === "vacancies") {
+<div class="popup" id="vacancies">
+    <div class="popup__body">
+        <div class="popup__content">
+            <div class="popup__top">
+                <h3 class="popup__title">
+                    Вакансия
+                </h3>
+                
+                <button type="button" class="popup__top-close popup-close" id="vacancies"></button>
+            </div>
+            
+            <div class="popup__info">
+                <div class="popup__info-content">
+                    <h4 class="popup__info-title"></h4>
+
+                    <h5 class="popup__info-subtitle"></h5>
+                </div>
+            </div>
+
+            <div class="popup__form">
+                <form action="" method="post">
+
+                    <div class="form__field">
+                        <label for="name" class="form__label">
+                            Ф.И.О
+                        </label>
+                        <input type="text" id="name" class="form__input" placeholder="ФИО">
+                    </div>
+
+                    <div class="form__field">
+                        <label for="tel" class="form__label">
+                            Телефон
+                        </label>
+                        <input type="text" id="tel" class="form__input mask-phone" placeholder="+7">
+                    </div>
+
+                    <div class="form__field">
+                        <label for="study" class="form__label">
+                            Образование
+                        </label>
+                        <input type="text" id="study" class="form__input" placeholder="Название">
+                    </div>
+
+                    <div class="form__file">
+                        <input name="file" type="file" name="file" id="file" class="form__file-input" multiple>
+                           
+                        <label class="form__file-wrapper" for="file">
+                            <div class="form__file-text">Загрузить резюме</div>
+                        </label>
+                    </div>
+
+                    <div class="checkbox form__checkbox">
+                        <input type="checkbox" id="sogl" class="checkbox__input form__checkbox-input">
+                        <label for="sogl" class="checkbox__label form__checkbox-label">
+                            <span>
+                                Я согласен(а) с обработкой моих персональных данных в соответствии с условиями <a href="#">Политики конфиденциальности</a>
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="popup__button-wrapper">
+                        <button type="button" class="popup__button-outline button popup-close" id="vacancies">Отменить</button>
+
+                        <button type="submit" class="popup__button button">Отправить</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+}

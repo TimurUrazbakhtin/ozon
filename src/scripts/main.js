@@ -1,0 +1,9 @@
+//=require components/header.js
+//=require components/glightbox.js
+//=require components/slider.js
+//=require components/catalog.js
+//=require components/questions.js
+//=require components/tabs.js
+//=require components/popup.js
+//=require components/form-file.js
+//=require components/inputmask.js

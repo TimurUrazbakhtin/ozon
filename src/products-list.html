@@ -1,0 +1,114 @@
+@@include('partials/header.html', {
+	"title": "Контрольные приборы",
+	"breadcrumbvisible": true,
+	"breadcrumb": {
+		"pagetopvisible": true,
+		"pagetopbggray": false,
+		"pagecentervisible": true,
+		"subtitlevisible": false,
+		"pagecenterurl": "products-section.html",
+		"pagecentertitle": "Продукция"
+	}
+})
+
+<section class="products-list">
+	<div class="container">
+		<div class="products-list__body">
+			<div class="products-list__start">
+				<form action="" method="get" class="search products-list__search">
+					<input type="text" class="search__input" placeholder="Поиск">
+					<button type="submit" class="search__button"></button>
+				</form>
+
+				<div class="products-list__section">
+					<h3 class="products-list__section-title">
+						Категории
+					</h3>
+
+					<button type="button" class="products-list__section-button">
+						Выбрать категорию
+					</button>
+
+					<div class="products-list__section-wrapper">
+						<a href="@@webRoot/products-list.html" class="products-list__section-link active">
+							Контрольные приборы
+						</a>
+
+						<a href="@@webRoot/products-list.html" class="products-list__section-link">
+							Медицинское оборудование
+						</a>
+
+						<a href="@@webRoot/products-list.html" class="products-list__section-link">
+							Приборы связи
+						</a>
+
+						<a href="@@webRoot/products-list.html" class="products-list__section-link">
+							Респираторы
+						</a>
+
+						<a href="@@webRoot/products-list.html" class="products-list__section-link">
+							Самоспасатели
+						</a>
+
+						<a href="@@webRoot/products-list.html" class="products-list__section-link">
+							Прочее
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="products-list__end">
+				<div class="products-list__wrapper">
+					@@for (var i = 0; i < 10; i++) {
+					<div class="products-list__elem">
+						<a href="@@webRoot/products-detail.html" class="products-list__elem-img">
+							<img src="@@webRoot/images/content/products-detail.jpg" alt="">
+						</a>
+
+						<a href="@@webRoot/products-detail.html" class="products-list__elem-title">
+							<h4>
+								Контроль герметичности ПМ «ПД-10М»
+							</h4>
+						</a>
+
+						<a href="@@webRoot/products-list.html" class="products-list__elem-subtitle">
+							<h5>
+								Контрольные приборы
+							</h5>
+						</a>
+
+						<button type="button" class="button products-list__elem-button popup-open" id="products" data-title="Контроль герметичности ПМ «ПД-10М»" data-subtitle="Контрольные приборы" data-img="@@webRoot/images/content/products-detail.jpg">
+							Оформить заявку
+						</button>
+					</div>
+					}
+
+					<div class="products-list__elem">
+						<a href="@@webRoot/products-detail.html" class="products-list__elem-img">
+							<img src="@@webRoot/images/content/products-detail.jpg" alt="">
+						</a>
+
+						<a href="@@webRoot/products-detail.html" class="products-list__elem-title">
+							<h4>
+								Контроль герметичности
+							</h4>
+						</a>
+
+						<a href="@@webRoot/products-list.html" class="products-list__elem-subtitle">
+							<h5>
+								Контрольные приборы
+							</h5>
+						</a>
+
+						<button type="button" class="button products-list__elem-button popup-open" id="products" data-title="Контроль герметичности ПМ «ПД-10М»" data-subtitle="Контрольные приборы" data-img="@@webRoot/images/content/products-detail.jpg">
+							Оформить заявку
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+@@include('partials/popup.html', {"type": "products"})
+@@include('partials/footer.html')

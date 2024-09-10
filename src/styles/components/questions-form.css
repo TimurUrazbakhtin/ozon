@@ -1,0 +1,108 @@
+.questions-form {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 0 80px 0;
+}
+.questions-form__img,
+.questions-form__content {
+    width: 50%;
+}
+.questions-form__img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.questions-form__content {
+    padding: 60px 70px 60px 70px;
+    background-color: #009bda;
+}
+.questions-form__title {
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+}
+.questions-form__subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    margin: 0 0 5px 0;
+}
+.questions-form__wrapper {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+.questions-form__desc {
+    margin: 0 0 30px 0;
+}
+.questions-form__input {
+    border: 0;
+    height: 41px;
+    border-radius: 5px;
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 0 20px;
+}
+.questions-form__textarea:focus-visible,
+.questions-form__input:focus-visible {
+    outline-color: #005472;
+}
+.questions-form__textarea::placeholder,
+.questions-form__input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: #909090;
+}
+.questions-form__textarea {
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 20px;
+    height: 76px;
+    margin: 0 0 15px 0;
+    resize: none;
+    border: 0;
+}
+.questions-form__checkbox {
+    margin: 0 0 20px 0;
+}
+.questions-form__button {
+    border-radius: 7px;
+    padding: 0 14px;
+    width: 176px;
+    height: 38px;
+    background-color: #0b3241;
+    border: 0;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .questions-form__title {
+        font-size: 20px;
+    }
+    .questions-form__subtitle {
+        font-size: 16px;
+    }
+    .questions-form__wrapper {
+        font-size: 16px;
+    }
+    .questions-form__content {
+        padding: 20px 30px;
+    }
+}
+@media (max-width: 768px) {
+    .questions-form {
+        flex-direction: column;
+    }
+    .questions-form__content, .questions-form__img {
+        width: 100%;
+    }
+}

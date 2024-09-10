@@ -1,0 +1,65 @@
+@@include('partials/header.html', {
+	"title": "Вакансии",
+	"breadcrumbvisible": true,
+	"breadcrumb": {
+		"pagetopvisible": true,
+		"pagetopbggray": false,
+		"pagecentervisible": false,
+		"subtitlevisible": false,
+	}
+})
+
+<section class="vacancies">
+	<div class="container">
+		<div class="vacancies__wrapper">
+
+			<div class="vacancies__elem">
+				<div class="vacancies__content">
+					<h3 class="vacancies__title">
+						Сварщик
+					</h3>
+
+					<h4 class="vacancies__subtitle">
+						60 000₽
+					</h4>
+				</div>
+
+				<div class="vacancies__end">
+					<p>
+						Описание...
+					</p>
+				</div>
+
+				<button type="button" class="button vacancies__button popup-open" id="vacancies" data-title="Сварщик" data-subtitle="60 000₽">
+					ОСТАВИТЬ ЗАЯВКУ
+				</button>
+			</div>
+
+			<div class="vacancies__elem">
+				<div class="vacancies__content">
+					<h3 class="vacancies__title">
+						Электромонтажник
+					</h3>
+
+					<h4 class="vacancies__subtitle">
+						60 000₽
+					</h4>
+				</div>
+
+				<div class="vacancies__end">
+					<p>
+						Описание...
+					</p>
+				</div>
+
+				<button type="button" class="button vacancies__button popup-open" id="vacancies" data-title="Сварщик" data-subtitle="60 000₽">
+					ОСТАВИТЬ ЗАЯВКУ
+				</button>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+@@include('partials/popup.html', {"type": "vacancies"})
+@@include('partials/footer.html')

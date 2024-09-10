@@ -1,0 +1,135 @@
+.checkbox__input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.checkbox__input, .checkbox__label {
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+}
+.checkbox__input, .checkbox__label::before {
+	content: '';
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	border: 1px solid #fff;
+	border-radius: 2px;
+	margin-right: 15px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+}
+.checkbox__input:checked + .checkbox__label::before {
+	border-color: #005472;
+	background-color: #2c2b30;;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+.checkbox__input:not(:disabled):not(:checked) + .checkbox__label:hover::before {
+	border-color: #005472;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.checkbox__input:not(:disabled):active + .checkbox__label::before {
+	background-color: #005472;
+	border-color: #005472;
+}
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.checkbox__input:focus:not(:checked) + .checkbox__label::before {
+	border-color: #fff;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.checkbox__input:disabled + .checkbox__label::before {
+	background-color: #fff;
+}
+.checkbox__label {
+	font-weight: 500;
+	font-size: 12px;
+	color: #fff;
+}
+
+.form__checkbox {
+	margin: 0 0 40px 0;
+}
+.form__field {
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+	margin: 0 0 15px 0;
+}
+
+.form__label {
+	font-weight: 500;
+	font-size: 16px;
+	color: #344054;
+}
+.form__input {
+	border: 1.21px solid #d0d5dd;
+	border-radius: 10px;
+	height: 53px;
+	padding: 0 12px;
+}
+.form__input:focus-visible {
+	border-color: #009BDA;
+	outline: none;
+}
+.form__input::placeholder {
+	font-weight: 500;
+	font-size: 16px;
+	color: #d0d5dd;
+}
+
+.form__checkbox-label {
+	color: #000;
+}
+.form__checkbox-label::before {
+	border-color: #000;
+}
+.form__checkbox-input:focus:not(:checked) + .form__checkbox-label::before {
+	border-color: #009BDA;
+}
+.form__checkbox-input:checked + .form__checkbox-label::before {
+	background-color: #009BDA;
+}
+
+.form__file {
+	width: 100%;
+	position: relative;
+	margin: 15px 0;
+	text-align: center;
+}
+.form__file-input {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+}
+.form__file-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.form__file-text {
+	height: 59px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+	border: 1.21px solid #d0d5dd;
+	border-radius: 10px;
+	font-weight: 500;
+	font-size: 16px;
+	color: #d0d5dd;
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+.form__file-text::before {
+	content: '';
+	background: url('../images/decor/file-upload.svg') no-repeat center / contain;
+	width: 20px;
+	height: 24px;
+	display: block;
+}

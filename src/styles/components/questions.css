@@ -1,0 +1,35 @@
+.questions {
+    margin: 0 0 80px 0;
+}
+.questions__elem {
+    padding: 24px 32px 32px 0;
+    position: relative;
+}
+.questions__elem:not(:first-child) {
+    border-top: 1px solid #eaecf0;
+}
+.questions__elem-top {
+    font-weight: 500;
+    font-size: 20px;
+    color: #005472;
+    margin: 0 0 16px 0;
+}
+.questions__elem:after {
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: 4px;
+    width: 20px;
+    height: 20px;
+    background: url('../images/decor/questions-icon.svg') no-repeat center / contain;
+}
+.questions__elem.active::after {
+    background: url('../images/decor/questions-icon-open.svg') no-repeat center / contain;
+}
+.questions__elem-body {
+    font-size: 16px;
+    line-height: 150%;
+    transition: height 1s ease-out;
+    height: 0;
+    overflow: hidden;
+}

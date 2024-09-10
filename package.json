@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "name": "gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "browser-sync": "^3.0.2",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^6.1.1",
+    "del": "^7.1.0",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-include": "^2.4.1",
+    "gulp-postcss": "^10.0.0",
+    "gulp-uglify": "^3.0.2",
+    "postcss-import": "^16.1.0"
+  }
+}

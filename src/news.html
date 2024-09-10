@@ -1,0 +1,69 @@
+@@include('partials/header.html', {
+	"title": "Новости",
+	"breadcrumbvisible": true,
+	"breadcrumb": {
+		"pagetopvisible": true,
+		"pagetopbggray": false,
+		"pagecentervisible": false,
+		"subtitlevisible": false
+	}
+})
+
+<section class="news">
+	<div class="container">
+        <div class="news__wrapper">
+            @@for (var i = 0; i < 3; i++) {
+			<a href="@@webRoot/news-detail.html" class="news__elem">
+				<div class="news__elem-image">
+					<img src="@@webRoot/images/content/news-1.jpg" alt="">
+				</div>
+				
+				<div class="news__elem-content">
+					<h3 class="news__elem-title">
+						XVIII Всероссийский форум-выставка «Госзаказ»
+					</h3>
+					
+					<div class="news__elem-date">
+						12 февраля 2024
+					</div>
+				</div>
+			</a>
+			
+			<a href="@@webRoot/news-detail.html" class="news__elem">
+				<div class="news__elem-image">
+					<img src="@@webRoot/images/content/news-2.jpg" alt="">
+				</div>
+				
+				<div class="news__elem-content">
+					<h3 class="news__elem-title">
+						ООО "Завод "Озон" ГС и ПО" ГС и ПО на VIII Международном салоне «Комплексная безопасность — 2015»
+					</h3>
+					
+					<div class="news__elem-date">
+						12 февраля 2024
+					</div>
+				</div>
+			</a>
+			
+			<a href="@@webRoot/news-detail.html" class="news__elem">
+				<div class="news__elem-image">
+					<img src="@@webRoot/images/content/news-3.jpg" alt="">
+				</div>
+				
+				<div class="news__elem-content">
+					<h3 class="news__elem-title">
+						На ООО "Завод "Озон" ГС и ПО" прошла экскурсия для студентов в рамках Всероссийской акции «Неделя без турникетов»
+					</h3>
+					
+					<div class="news__elem-date">
+						12 февраля 2024
+					</div>
+				</div>
+			</a>
+            }
+		</div>
+        
+	</div>
+</section>
+
+@@include('partials/footer.html')
